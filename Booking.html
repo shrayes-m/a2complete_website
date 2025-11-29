@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--Author name : Shrayes Mudvari-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Appointment | 100SMILES Dental Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html"><h1>100SMILES Dental Care</h1></a>
+</header>
+
+<nav class="mob-nav">
+  <button id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+  <ul id="menu-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="Our team.html">Our team</a></li>
+    <li><a href="Booking.html">Book appointment</a></li>
+    <li><a href="contact.html">Contact us</a></li>
+    <li><a href="article.html">Article</a></li>
+  </ul>
+</nav>
+
+<nav class="tab-desktop">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="Our team.html">Our team</a></li>
+    <li><a href="Booking.html">Book appointment</a></li>
+    <li><a href="contact.html">Contact us</a></li>
+    <li><a href="article.html">Article</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div id="form">
+    <h2>Book Your Appointment</h2>
+
+    <form id="appointmentForm" action="#" method="POST">
+
+      <fieldset>
+       <legend>Appointment Details</legend>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="first name" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="last name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="04XX XXX XXX" required>
+      </fieldset>
+
+      <fieldset>
+        
+
+        <label for="date">Preferred Date:</label>
+        <input type="text" id="date" name="date" placeholder="YYYY-MM-DD" required>
+
+        <label for="time">Preferred Time:</label>
+        <select id="time" name="time" required>
+          <option value="">--Select a time--</option>
+          <option value="9am">9:00 AM</option>
+          <option value="11am">11:00 AM</option>
+          <option value="1pm">1:00 PM</option>
+          <option value="3pm">3:00 PM</option>
+        </select>
+
+        <label for="service">Type of Service:</label>
+        <select id="service" name="service" required>
+          <option value="">--Please choose an option--</option>
+          <option value="general">General Check-up</option>
+          <option value="cleaning">Cleaning / Whitening</option>
+          <option value="filling">Cavity Filling</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="notes">Any specific concerns or notes?</label>
+        <textarea id="notes" name="notes" rows="5" ></textarea>
+      </fieldset>
+
+      <input type="submit" value="Book Appointment" class="btn">
+    </form>
+
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
